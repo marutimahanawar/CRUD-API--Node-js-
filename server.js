@@ -1,3 +1,4 @@
-// run `node index.js` in the terminal
-
-console.log(`Hello Node.js v${process.versions.node}!`);
+const app=require('./app');
+app.listen(3000,()=>{
+    console.log("srver runing on 3000 port",);
+})
