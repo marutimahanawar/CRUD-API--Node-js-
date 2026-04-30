@@ -1,4 +1,6 @@
 const app=require('./app');
-app.listen(3000,()=>{
-    console.log("srver runing on 3000 port",);
+require('dotenv').config();
+const port=process.env.PORT;
+app.listen(port,()=>{
+    console.log("srver runing on",port);    
 })
